@@ -1,94 +1,86 @@
-# Learning Management System (LMS)
+# Library Management System
 
-A modern **Learning Management System (LMS)** built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Supabase**. The platform enables students to enroll in courses, access learning materials, complete assignments, and track their progress, while instructors can create and manage courses through an intuitive dashboard.
+A modern **Library Management System** built with **React, TypeScript, Vite, Tailwind CSS, and Supabase**. The application helps librarians manage books, members, book issues, returns, reservations, fines, and reports through a secure and user-friendly interface.
+
+---
+
+# Internship Details
+
+| Field | Details |
+|--------|---------|
+| **Intern ID** |  CITS5513|
+| **Full Name** | Anup Kumar |
+| **No. of Weeks** | 6 Weeks  |
+| **Project Name** | Library Management System |
+| **Project Scope** | Designed and developed a full-stack Library Management System that enables librarians to manage books, members, book issuing and returning, reservations, fine calculations, and report generation. The project includes secure authentication, role-based access control, responsive user interface, real-time database integration using Supabase, and efficient library administration. |
 
 ---
 
 # Project Overview
 
-The Learning Management System (LMS) is a web-based platform designed to simplify online education by providing a centralized environment for students, instructors, and administrators. The application uses **Supabase** for authentication and database management, while **React** and **Vite** provide a fast and responsive frontend.
+The **Library Management System** is a web-based application developed to automate the daily operations of a library. It provides separate dashboards for **Members**, **Librarians**, and **Administrators**, allowing efficient management of books, users, borrowing records, returns, reservations, and fines. The system uses **Supabase** for authentication and PostgreSQL database services, while **React**, **TypeScript**, and **Vite** provide a fast, secure, and responsive frontend experience.
 
----
+## Features
 
-# Features
+### Member Features
+- User Registration and Login
+- Secure Authentication
+- Browse Available Books
+- Search Books
+- Reserve Books
+- Borrow Books
+- Return Books
+- View Borrowing History
+- Track Due Dates
+- View Fine Details
+- Update Profile
 
-## Student Features
+### Librarian Features
+- Librarian Login
+- Add New Books
+- Update Book Information
+- Delete Books
+- Manage Book Inventory
+- Issue Books
+- Accept Returns
+- Manage Reservations
+- Generate Reports
 
-* User Registration and Login
-* Secure Authentication
-* Browse Available Courses
-* Course Enrollment
-* View Course Details
-* Access Learning Materials
-* Watch Video Lectures
-* Download Resources
-* Submit Assignments
-* Track Learning Progress
-* View Grades
-* Update Profile
+### Admin Features
+- Admin Dashboard
+- Manage Users
+- Manage Librarians
+- Manage Members
+- Manage Categories
+- Library Analytics
+- System Configuration
+- Activity Logs
 
----
+## Technology Stack
 
-## Instructor Features
+### Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Lucide React
 
-* Instructor Registration
-* Instructor Login
-* Instructor Dashboard
-* Create Courses
-* Edit Course Information
-* Upload Learning Materials
-* Upload Video Lectures
-* Manage Assignments
-* Grade Student Submissions
-* Monitor Student Progress
+### Backend Service
+- Supabase
 
----
+### Database
+- PostgreSQL (Supabase)
 
-## Admin Features
+### Development Tools
+- ESLint
+- PostCSS
+- npm
 
-* Admin Dashboard
-* Manage Users
-* Manage Students
-* Manage Instructors
-* Manage Courses
-* Manage Categories
-* Monitor Platform Activity
-* Generate Reports
-* System Configuration
-
----
-
-# Technology Stack
-
-## Frontend
-
-* React
-* TypeScript
-* Vite
-* Tailwind CSS
-* React Router DOM
-* Lucide React
-
-## Backend Service
-
-* Supabase
-
-## Database
-
-* PostgreSQL (Supabase)
-
-## Development Tools
-
-* ESLint
-* PostCSS
-* npm
-
----
-
-# Project Structure
+## Project Structure
 
 ```text
-Learning-Management-System/
+Library-Management-System/
 
 ├── src/
 │   ├── assets/
@@ -119,162 +111,71 @@ Learning-Management-System/
 └── README.md
 ```
 
----
-
-# Installation
-
-## Clone the Repository
+## Installation
 
 ```bash
-git clone https://github.com/Anupkumar0845/your-repository-name.git
-```
+git clone https://github.com/Anupkumar0845/library-management-system.git
 
-```bash
-cd your-repository-name
-```
+cd library-management-system
 
----
-
-# Install Dependencies
-
-```bash
 npm install
-```
 
----
-
-# Environment Variables
-
-Create a `.env` file in the project root directory.
-
-```env
-VITE_SUPABASE_URL=your_supabase_project_url
-
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-> **Note:** Never commit your `.env` file or sensitive credentials to GitHub.
-
----
-
-# Running the Development Server
-
-```bash
 npm run dev
 ```
 
-The application will be available at:
+The application will run at:
 
-```text
+```
 http://localhost:5173
 ```
 
----
+## Environment Variables
 
-# Build for Production
+Create a `.env` file:
 
-```bash
-npm run build
+```env
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
----
+> Never upload your `.env` file to GitHub.
 
-# Preview the Production Build
+## Core Modules
 
-```bash
-npm run preview
-```
+- Authentication
+- Member Dashboard
+- Librarian Dashboard
+- Admin Dashboard
+- Book Management
+- Borrow & Return Management
+- Reservation Management
+- Fine Management
+- Reports & Analytics
+- User Profile
 
----
+## Future Enhancements
 
-# Available Scripts
+- QR Code Book Issue
+- Barcode Scanner
+- E-Book Management
+- AI Book Recommendation
+- Email Notifications
+- SMS Alerts
+- Dark Mode
+- Mobile Application
 
-| Command             | Description                  |
-| ------------------- | ---------------------------- |
-| `npm run dev`       | Start the development server |
-| `npm run build`     | Create a production build    |
-| `npm run preview`   | Preview the production build |
-| `npm run lint`      | Run ESLint                   |
-| `npm run typecheck` | Check TypeScript types       |
+## License
 
----
+This project is developed for educational and internship purposes.
 
-# Core Modules
-
-* Authentication
-* Student Dashboard
-* Instructor Dashboard
-* Admin Dashboard
-* Course Management
-* Course Enrollment
-* Lesson Management
-* Assignment Management
-* Progress Tracking
-* User Profile
-* Responsive User Interface
-
----
-
-# Supabase Integration
-
-Supabase is used for:
-
-* User Authentication
-* PostgreSQL Database
-* Database Migrations
-* Backend APIs
-* Secure Data Management
-
-Database migration files are located in:
-
-```text
-supabase/migrations/
-```
-
----
-
-# Future Enhancements
-
-* Live Video Classes
-* Online Quizzes
-* Certificate Generation
-* Discussion Forum
-* Course Reviews and Ratings
-* Email Notifications
-* Push Notifications
-* AI Learning Assistant
-* Multi-language Support
-* Dark Mode
-* Payment Gateway Integration
-
----
-
-# Contributing
-
-Contributions are welcome.
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Push the branch.
-5. Open a Pull Request.
-
----
-
-# License
-
-This project is intended for educational and learning purposes.
-
----
-
-# Author
+## Author
 
 **Anup Kumar**
 
-**B.Tech – Information Technology**
+B.Tech – Information Technology
 
-**Rajkiya Engineering College Banda**
+Rajkiya Engineering College Banda
 
-**Dr. A.P.J. Abdul Kalam Technical University (AKTU)**
+Dr. A.P.J. Abdul Kalam Technical University (AKTU)
 
-GitHub: **https://github.com/Anupkumar0845**
+GitHub: https://github.com/Anupkumar0845
